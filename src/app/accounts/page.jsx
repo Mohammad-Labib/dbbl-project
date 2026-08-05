@@ -11,7 +11,7 @@ export default function DbblCard() {
 
   useEffect(() => {
     // .env.local থেকে NEXT_PUBLIC_BASE_URL আনা হচ্ছে
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:5000";
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://dbbl-project-server.vercel.app";
 
     fetch(`${baseUrl}/api/dbbl`)
       .then((res) => {

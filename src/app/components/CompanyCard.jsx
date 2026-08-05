@@ -20,7 +20,7 @@ export default function CompanyCard() {
     "Tax Status": "Exempt",
   });
 
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:5000";
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://dbbl-project-server.vercel.app";
 
   // Data Fetching Function
   const fetchCompanies = () => {

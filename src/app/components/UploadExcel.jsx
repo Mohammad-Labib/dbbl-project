@@ -9,7 +9,7 @@ export default function ExcelUploadSection({ onUploadSuccess }) {
   const [status, setStatus] = useState({ type: "", message: "" });
 
   const fileInputRef = useRef(null);
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:5000";
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://dbbl-project-server.vercel.app";
 
   
   const handleFileSelect = (selectedFile) => {
