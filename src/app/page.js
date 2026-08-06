@@ -22,7 +22,7 @@ export default function HomePage() {
       <UploadExcel/>
       <UploadCompanyExcel/>
       {/* <CompanyCard/> */}
-      <UploadCreditList/>
+      {/* <UploadCreditList/> */}
       {/* <DbblCard></DbblCard> */}
       <Footer />
     </div>
