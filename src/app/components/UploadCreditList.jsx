@@ -6,7 +6,7 @@ export default function UploadCreditList() {
   const [cards, setCards] = useState([]);
 
   useEffect(() => {
-    fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/credit-card`)
+    fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/credit-card`)
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
