@@ -41,7 +41,7 @@ export default function NotFound() {
           </h1>
           
           <p className="text-sm text-slate-500 mt-2.5 leading-relaxed">
-            Oops! The page you are looking for doesn’t exist or has been moved to another URL.
+            Oops! The page you are looking for doesn t exist or has been moved to another URL.
           </p>
 
           {/* Quick Action Buttons */}
