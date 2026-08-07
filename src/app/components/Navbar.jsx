@@ -11,7 +11,7 @@ export default function Navbar() {
   // নেভিগেশন লিঙ্কগুলোর অ্যারে
   const navLinks = [
     { name: 'Home', href: '/' },
-    { name: 'Search', href: '/search' },
+    // { name: 'Search', href: '/search' },
     { name: 'Accounts', href: '/accounts' },
     { name: 'Dashboard', href: '/dashboard' },
   ];
