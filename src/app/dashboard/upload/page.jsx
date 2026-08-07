@@ -17,7 +17,7 @@ export default function UploadPage(){
 
 
     <UploadCompanyExcel />
-    <UploadCreditList/>
+    {/* <UploadCreditList/> */}
  
   </div>
 
