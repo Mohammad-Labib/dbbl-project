@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 
@@ -23,8 +24,15 @@ export default function Navbar() {
           
           {/* Logo Section */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="bg-gradient-to-tr from-indigo-600 to-violet-600 text-white p-2 rounded-xl font-extrabold text-lg flex items-center justify-center w-10 h-10 shadow-md shadow-indigo-500/20 group-hover:scale-105 transition-transform">
-              ACL
+            <div className="relative w-10 h-10 overflow-hidden rounded-xl group-hover:scale-105 transition-transform">
+              <Image
+                src="https://i.ibb.co/gLwdtCyP/afralogo.png"
+                alt="Afra Corporation Ltd Logo"
+                fill
+                sizes="40px"
+                className="object-cover"
+                priority
+              />
             </div>
             <div className="flex flex-col">
               <span className="text-lg font-bold text-slate-900 leading-tight group-hover:text-indigo-600 transition-colors">

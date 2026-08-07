@@ -5,12 +5,12 @@ import { useState } from "react";
 export default function SettingsPage() {
   const [activeTab, setActiveTab] = useState("profile");
 
-  // User State
+  // User State fixed with proper initial values
   const [formData, setFormData] = useState({
-    fullName: "Mohammad Labib",
-    email: "labib@example.com",
-    bio: "Full-Stack Developer | Next.js Enthusiast",
-    theme: "system",
+    fullName: "",
+    email: "",
+    bio: "",
+    theme: "light",
     emailNotifications: true,
     marketingEmails: false,
     currentPassword: "",
@@ -45,6 +45,7 @@ export default function SettingsPage() {
         {["profile", "appearance", "notifications", "security"].map((tab) => (
           <button
             key={tab}
+            type="button"
             onClick={() => setActiveTab(tab)}
             className={`px-4 py-3 font-medium text-sm capitalize whitespace-nowrap transition-colors border-b-2 ${
               activeTab === tab
@@ -99,7 +100,7 @@ export default function SettingsPage() {
                 </label>
                 <textarea
                   name="bio"
-                  rows="3"
+                  rows={3}
                   placeholder="Write a short bio about yourself..."
                   value={formData.bio}
                   onChange={handleChange}
